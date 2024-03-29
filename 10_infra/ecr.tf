@@ -8,7 +8,7 @@ resource "aws_ecr_repository" "webapp" {
   image_scanning_configuration {
     scan_on_push = true
   }
-
+ 
   tags = {
     Name    = "${var.project}-webapp"
     Project = var.project

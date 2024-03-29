@@ -8,7 +8,7 @@ resource "aws_ecs_cluster" "webapp" {
     name  = "containerInsights"
     value = "disabled"
   }
-
+ 
   tags = {
     Name    = "${var.project}-${var.environment}-webapp-cluster"
     Project = var.project
