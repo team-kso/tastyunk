@@ -9,19 +9,19 @@ terraform {
       version = "~> 3.0"
     }
   }
-  backend "s3" {
-    bucket  = "{YOUR-S3-BUCKET-NAME}"
-    key     = "{YOUR-S3-BUCKET-KEY}"
-    region  = "ap-northeast-1"
-    profile = "terraform"
-  }
+  # backend "s3" {
+  #   bucket  = "unk-ga-lesson"
+  #   key     = "terraform/unk-terraform.tfstate"
+  #   region  = "ap-northeast-1"
+  #   profile = "terraform"
+  # }
 }
 
 # ---------------------------------------------
 # Provider
 # ---------------------------------------------
 provider "aws" {
-  profile = "terraform"
+  # profile = "terraform"
   region  = "ap-northeast-1"
 }
 
