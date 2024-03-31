@@ -1,6 +1,6 @@
 name: "infra preview & deploy"
 
-on: 
+on:
   push:
     branches:
       - main
@@ -15,9 +15,8 @@ permissions:
 
 jobs:
   preview:
-    name: "Preview"
-    runs-on: ubunts-latest
-    steps: 
+    name: Preview
+    runs-on: ubuntu-latest
+    steps:
       - run: |
-          echo "Hello work"
-
+          echo "Hello World"
