@@ -19,5 +19,5 @@ jobs:
     runs-on: ubunts-latest
     steps: 
       - run: |
-        echo "Hello work"
+          echo "Hello work"
 
